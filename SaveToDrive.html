@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Save to Drive</title>
+    <link rel="canonical" href="http://drive.google.com">
+    <script>
+      window.___gcfg = {
+        parsetags: 'explicit'
+      };
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <a href="javascript:void(0)" id="render-link">Save to Drive</a>
+    <div id="savetodrive-div"></div>
+    <script>
+      function renderSaveToDrive() {
+        gapi.savetodrive.render('savetodrive-div', {
+          src: 'https://nl11.seedr.cc/downloads/b908f66a5455452b164cf462158f77d65d6c4610/Train.to.Busan.2016.720p.HDRip.x264-YUKINOMATI.mkv',
+          filename: 'Train.to.Busan.2016.720p.HDRip.x264-YUKINOMATI.mkv',
+          sitename: 'Seedr'
+        });
+      }
+      document.getElementById('render-link').addEventListener('click', renderSaveToDrive);
+    </script>
+  </body>
+</html>
